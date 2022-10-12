@@ -11,35 +11,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- stylesheet link -->
+    <!-- stylesheet.css link -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- favicon link -->
     <link rel='shortcut icon' type='image/x-icon' href='rock-scissors-paper-lizard-spock-icons-hd-png.png'/>
  
-    <title>Rock, Paper, Scissors, Lizard, Sprock</title>
+    <title>BB's Rock, Paper, Scissors, Lizard, Sprock</title>
 </head>
 
 
 <body>
 
-    <!-- favicon link -->
+    <!-- header area -->
     <header>
         <h1 class="heading">
-            <img class="logo" src="assets/images/RPSLS.png" alt="logo"> Rock, Paper, Scissors, Lizard, Sprock!
+            <img class="logo" src="assets/images/RPSLS.png" alt="logo"> BB's Rock, Paper, Scissors, Lizard, Sprock!
         </h1>
     </header>
-    
 
-    <div class="game-area">
 
+
+    <div class="selection-area">
+        <h2 class="yourselection">You: <span id="player-selection"></span></h2>
+        <h2 class="compselection">Computer: <span id="computer-selection"></span></h2>
     </div>
+    
+    <div class="outcome-area">
+        <h2 class="outcome">Result: <span id="outcome"></span></h2>
+    </div>
+
 
     <div class="score-area">
         <p class="scores">Player Score <span id="player-score">0</span></p>
         <p class="scores">Computer Score <span id="computer-score">0</span></p>
         <p class="scores">Draw <span id="draw-score">0</span></p>
     </div>
+
+    <div class="game-area">
+
+        <div class="control-area">
+            <button class="button" title="rock"><i id="Rock" class="fas fa-hand-rock" aria-hidden="true"></i></button>
+            <button class="button" title="paper"><i id="Paper" class="fas fa-hand-paper" aria-hidden="true"></i></button>
+            <button class="button" title="scissors"><i id="Scissors" class="fas fa-hand-scissors" aria-hidden="true"></i></button>
+            <button class="button" title="lizard"><i id="Lizard" class="fas fa-hand-lizard" aria-hidden="true"></i></button>
+            <button class="button" title="spock"><i id="Spock" class="fas fa-hand-spock" aria-hidden="true"></i></button>
+        </div>
+
+    </div>
+
+
+
+    <div>
+        <button id="rule-button" onclick="toggleRules()">Rules</button>
+        <button id="reset-game-button" onclick="toggleResetGame()">Reset game</button>
+    </div>
+
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
 
 
 
@@ -48,3 +91,5 @@
 
 </body>
 </html>
+
+
